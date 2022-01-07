@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "mag/password-changed-notification",
+    "description": "When you change the password, you will receive an email informing you of this",
     "keywords": [
-        ":vendor_name",
+        "MAG",
         "laravel",
-        ":package_slug"
+        "password-changed-notification"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/mag/password-changed-notification",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "MarcosGad",
+            "email": "marcosgad@yahoo.com",
             "role": "Developer"
         }
     ],
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "MAG\\PasswordChangedNotification\\": "src",
+            "MAG\\PasswordChangedNotification\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "MAG\\PasswordChangedNotification\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "MAG\\PasswordChangedNotification\\PasswordChangedNotificationServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "PasswordChangedNotification": "MAG\\PasswordChangedNotification\\Facades\\PasswordChangedNotification"
             }
         }
     },
