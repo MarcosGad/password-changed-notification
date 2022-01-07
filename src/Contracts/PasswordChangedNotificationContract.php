@@ -1,4 +1,5 @@
 <?php
+
 namespace MAG\PasswordChangedNotification\Contracts;
 
 use Illuminate\Mail\Mailable;

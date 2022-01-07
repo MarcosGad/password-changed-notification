@@ -1,11 +1,11 @@
 <?php
+
 namespace MAG\PasswordChangedNotification\Traits;
 
-use MAG\PasswordChangedNotification\Mail\PasswordChangedNotificationMail;
 use Illuminate\Mail\Mailable;
-use MAG\PasswordChangedNotification\Observers\PasswordChangedObserver;
 use Illuminate\Support\Facades\Mail;
-
+use MAG\PasswordChangedNotification\Mail\PasswordChangedNotificationMail;
+use MAG\PasswordChangedNotification\Observers\PasswordChangedObserver;
 
 trait PasswordChangedNotificationTrait
 {

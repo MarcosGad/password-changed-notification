@@ -9,12 +9,11 @@ class PasswordChangedObserver
 {
     public function updated(PasswordChangedNotificationContract $model)
     {
-      //  if($model->wasChanged('password')){
-      //     Mail::to($model->email)->send(new PasswordChangedNotificationMail);
-      //     //dd('ss');
-      //  }
+        //  if($model->wasChanged('password')){
+        //     Mail::to($model->email)->send(new PasswordChangedNotificationMail);
+        //     //dd('ss');
+        //  }
 
-      $model->sendPasswordChangedNotification();
+        $model->sendPasswordChangedNotification();
     }
 }
- 

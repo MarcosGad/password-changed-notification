@@ -3,8 +3,8 @@
 namespace MAG\PasswordChangedNotification\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use MAG\PasswordChangedNotification\PasswordChangedNotificationServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
@@ -30,6 +30,5 @@ class TestCase extends Orchestra
 
         $migration = include __DIR__.'/../database/migrations/create_users_table.php.stub';
         $migration->up();
-        
     }
 }

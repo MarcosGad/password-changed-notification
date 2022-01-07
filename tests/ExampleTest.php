@@ -1,7 +1,7 @@
 <?php
 
-use MAG\PasswordChangedNotification\Tests\Model\User;
 use Illuminate\Support\Facades\Mail;
+use MAG\PasswordChangedNotification\Tests\Model\User;
 
 it('can send mail to the users when password is changed', function () {
     Mail::fake();

@@ -2,16 +2,17 @@
 
 namespace MAG\PasswordChangedNotification\Tests\Model;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use MAG\PasswordChangedNotification\Contracts\PasswordChangedNotificationContract;
 use MAG\PasswordChangedNotification\Traits\PasswordChangedNotificationTrait;
 
-
 class User extends Authenticatable implements PasswordChangedNotificationContract
 {
-    use Notifiable, HasFactory, PasswordChangedNotificationTrait;
+    use Notifiable;
+    use HasFactory;
+    use PasswordChangedNotificationTrait;
 
     /**
      * The attributes that are mass assignable.
@@ -39,5 +40,4 @@ class User extends Authenticatable implements PasswordChangedNotificationContrac
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
 }
